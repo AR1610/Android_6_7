@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F2"
+    android:padding="30dp">
+
+    <TextView
+        android:id="@+id/tv_wlcmBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Back"
+        android:textColor="#000"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_loginBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_wlcmBack"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="40dp"
+        android:text="Login Back"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_loginBack"
+        android:background="@drawable/inner_bg"
+        android:layout_marginTop="50dp"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_login"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edt_bg"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="15dp"
+            android:hint="Email"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColor="#fff"
+            android:textColorHint="#fff" />
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_Email"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edt_bg"
+            android:hint="Password"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="#fff"
+            android:textColorHint="#fff" />
+
+        <TextView
+            android:id="@+id/tv_fp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_password"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Forgot Password"
+            android:textColor="#fff" />
+
+        <View
+            android:id="@+id/v1"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_fp"
+            android:layout_alignLeft="@+id/tv_fp"
+            android:layout_alignRight="@+id/tv_fp"
+            android:background="#fff" />
+
+        <android.widget.Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v1"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/btn_bg"
+            android:text="Login"
+            android:textColor="#19851D" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/img_dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_loginBack"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/round_dp"
+        android:padding="10dp"
+        android:src="@drawable/user_ngo" />
+
+
+</RelativeLayout>
