@@ -72,6 +72,31 @@
             android:textColor="#fff"
             android:textColorHint="#fff" />
 
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/radio_grp"
+            android:layout_below="@+id/edt_password">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/male"
+                android:text="Male"
+                android:textColor="#fff"
+                android:buttonTint="#fff"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/female"
+                android:text="Female"
+                android:textColor="#fff"
+                android:buttonTint="#fff"/>
+
+        </RadioGroup>
+
+
         <TextView
             android:id="@+id/tv_fp"
             android:layout_width="wrap_content"

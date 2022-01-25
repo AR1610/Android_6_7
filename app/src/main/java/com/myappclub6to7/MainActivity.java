@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     EditText edtEmail;
     Button btnLogin,btnSend;
     ImageView imgDP;
+    RadioGroup radioGroup;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         btnLogin = findViewById(R.id.btn_login);
         imgDP = findViewById(R.id.img_dp);
         btnSend = findViewById(R.id.btn_send);
+        radioGroup = findViewById(R.id.radio_grp);
         btnSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -42,6 +46,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 String strEmail = edtEmail.getText().toString();
+                int id = radioGroup.getCheckedRadioButtonId();
+                RadioButton radioButton = findViewById(id);
+                String radioName = radioButton.getText().toString();
+
                 if (strEmail.equals("")){
                   //  Toast.makeText(MainActivity.this, "Enter Email ID" + strEmail, Toast.LENGTH_LONG).show();
                     edtEmail.setError("Enter Email ID");
@@ -53,7 +61,9 @@ public class MainActivity extends AppCompatActivity {
                     // Explicit Intent
                     Intent i = new Intent(MainActivity.this,HomeActivity.class);
                     i.putExtra("KEY_EMAIL",strEmail);
+                    i.putExtra("KEY_RADIO",radioName);
                     startActivity(i);
+
                 }
             }
         });

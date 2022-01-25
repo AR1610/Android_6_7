@@ -17,7 +17,8 @@ public class HomeActivity extends AppCompatActivity {
 
         Intent i = getIntent();
         String strEmail = i.getStringExtra("KEY_EMAIL");
-        tvEmail.setText("Email id is: "+strEmail);
+        String radioName = i.getStringExtra("KEY_RADIO");
+        tvEmail.setText("Email id is: "+strEmail+"  RadioName "+radioName);
 
     }
 }
