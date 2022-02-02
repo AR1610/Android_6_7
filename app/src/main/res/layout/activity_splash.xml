@@ -6,13 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".SplashActivity"
     android:gravity="center"
-    android:background="#EF4538"
+    android:background="#fff"
     android:orientation="vertical">
 
-    <ImageView
+    <com.myappclub6to7.GifImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/netflix"
-        android:background="#EF4538"/>
+        android:id="@+id/img_gif" />
 
 </LinearLayout>

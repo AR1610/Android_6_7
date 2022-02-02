@@ -9,19 +9,20 @@ import android.os.Handler;
 public class SplashActivity extends AppCompatActivity {
 
     int time = 3000;
+    GifImageView gifImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-
+        gifImageView = findViewById(R.id.img_gif);
+        gifImageView.setGifImageResource(R.drawable.img2);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(SplashActivity.this,MainActivity.class);
+                Intent i = new Intent(SplashActivity.this,DateTimeActivity.class);
                 startActivity(i);
                 finish();
-
             }
         },time);
     }

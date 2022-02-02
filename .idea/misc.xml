@@ -10,6 +10,7 @@
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppClub6to7/app/src/main/res/drawable/main_btn_bg.xml" value="0.17357859531772576" />
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppClub6to7/app/src/main/res/drawable/main_edt_bg.xml" value="0.17357859531772576" />
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppClub6to7/app/src/main/res/drawable/round_dp.xml" value="0.24027777777777778" />
+        <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppClub6to7/app/src/main/res/layout/activity_date_time.xml" value="0.12736486486486487" />
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppClub6to7/app/src/main/res/layout/activity_home.xml" value="0.16486486486486487" />
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppClub6to7/app/src/main/res/layout/activity_image_pick.xml" value="0.16216216216216217" />
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppClub6to7/app/src/main/res/layout/activity_linear.xml" value="0.20854700854700856" />
@@ -17,7 +18,9 @@
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppClub6to7/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppClub6to7/app/src/main/res/layout/activity_main_prac.xml" value="0.20854700854700856" />
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppClub6to7/app/src/main/res/layout/activity_seekbar_ratingbar2.xml" value="0.16486486486486487" />
+        <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppClub6to7/app/src/main/res/layout/activity_spinner.xml" value="0.15202702702702703" />
         <entry key="..\:/Users/Royal Legion 02/AndroidStudioProjects/MyAppClub6to7/app/src/main/res/layout/activity_splash.xml" value="0.16486486486486487" />
+        <entry key="..\:/Users/Royal Legion 02/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_list_item_1.xml" value="0.1505016722408027" />
       </map>
     </option>
   </component>
