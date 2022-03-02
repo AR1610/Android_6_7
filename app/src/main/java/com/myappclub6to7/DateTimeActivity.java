@@ -63,15 +63,12 @@ public class DateTimeActivity extends AppCompatActivity {
                         new DatePickerDialog.OnDateSetListener() {
                             @Override
                             public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-
+                                
                                 tvDate.setText(dayOfMonth + "/" + (month + 1) + "/" + year);
                             }
                         }, year, month, date);
                 datePickerDialog.show();
-
             }
         });
-
-
     }
 }

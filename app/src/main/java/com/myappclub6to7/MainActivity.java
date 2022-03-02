@@ -7,6 +7,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RadioButton;
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnLogin,btnSend;
     ImageView imgDP;
     RadioGroup radioGroup;
+    CheckBox chb;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         edtEmail = findViewById(R.id.edt_Email);
         btnLogin = findViewById(R.id.btn_login);
         imgDP = findViewById(R.id.img_dp);
+        chb = findViewById(R.id.chb);
         btnSend = findViewById(R.id.btn_send);
         radioGroup = findViewById(R.id.radio_grp);
         btnSend.setOnClickListener(new View.OnClickListener() {
@@ -55,14 +58,21 @@ public class MainActivity extends AppCompatActivity {
                     edtEmail.setError("Enter Email ID");
                 }else {
 
-                    imgDP.setImageResource(R.drawable.customer);
-                    Toast.makeText(MainActivity.this, "Email id is " + strEmail, Toast.LENGTH_LONG).show();
 
-                    // Explicit Intent
-                    Intent i = new Intent(MainActivity.this,HomeActivity.class);
-                    i.putExtra("KEY_EMAIL",strEmail);
-                    i.putExtra("KEY_RADIO",radioName);
-                    startActivity(i);
+                    if (chb.isChecked()){
+
+                        imgDP.setImageResource(R.drawable.customer);
+                        Toast.makeText(MainActivity.this, "Email id is " + strEmail, Toast.LENGTH_LONG).show();
+
+                        // Explicit Intent
+                        Intent i = new Intent(MainActivity.this,HomeActivity.class);
+                        i.putExtra("KEY_EMAIL",strEmail);
+                        i.putExtra("KEY_RADIO",radioName);
+                        startActivity(i);
+
+                    }else {
+                        Toast.makeText(MainActivity.this, "Please Select Remember Me", Toast.LENGTH_SHORT).show();
+                    }
 
                 }
             }
